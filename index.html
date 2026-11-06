@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Word Trainer Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><h1>📚 Word Trainer <small>مدرّب الكلمات</small></h1><nav><button data-v="home" class="on">🏠 الرئيسية</button><button data-v="words">📝 كلماتي</button></nav></header>
+<section id="home"></section>
+<section id="words" hidden>
+<div class="box"><textarea id="inp" placeholder="apple - تفاحة | I eat an apple&#10;book - كتاب&#10;beautiful"></textarea>
+<p class="hint">كل كلمة في سطر: <b dir="ltr">word - المعنى | جملة مثال</b> (المعنى والمثال اختياريين). أو كلمات بينها فاصلة. أو ارفع ملف txt / json.</p>
+<div class="row"><button class="p" id="add">➕ إضافة</button><button id="file">📂 رفع ملف</button><button id="auto">🌐 إكمال المعاني والأمثلة</button><button id="imgs">🖼️ جلب صور</button><button id="exp">💾 نسخة احتياطية</button><button id="clr">🗑️ مسح الكل</button></div>
+<input type="file" id="f" accept=".txt,.csv,.json" hidden><p id="msg" class="hint"></p></div>
+<input type="text" id="sq" placeholder="🔍 ابحث في كلماتك">
+<div id="list"></div>
+</section>
+<section id="play" hidden><div class="box stage" id="stage"></div></section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
